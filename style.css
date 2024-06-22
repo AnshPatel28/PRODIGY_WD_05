@@ -1,0 +1,80 @@
+body {
+    background: url('images/default_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 85%;
+    max-width: 650px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#city {
+    font-weight: bold;
+}
+
+#current-weather {
+    padding: 20px;
+}
+
+#forecast-container {
+    margin-top: 20px;
+}
+
+#forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+}
+
+.forecast-day h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.forecast-day p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.loading-spinner {
+    margin-top: 20px;
+}
